@@ -87,7 +87,7 @@ public class Game extends JPanel implements Runnable, KeyListener{
         if(e.getKeyCode()==32){
             new Thread(player).start();
         }
-        else if(true/*e.getKeyCode()-44==character.charInt.get(0)*/){
+        else if(/*true*/e.getKeyCode()-44==character.charInt.get(0)){
             build_monster_bullet.bulletSet.add(new Bullet(player.x, player.y+70, 70, 15));
             countchar++;
             if(countchar%7==6){
